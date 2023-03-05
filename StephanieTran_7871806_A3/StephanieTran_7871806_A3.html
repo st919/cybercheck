@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Stephanie Tran 7871806 Programming Assignment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap">
+    <style>
+        h1 {
+			color: #024d72;
+			margin-top: 70px;
+            font-family: Calibri;
+            font-size: 40px; 
+        }
+
+        #studNameNum {
+			margin-top: 40px; 
+			text-align:center;
+			font-size: 50px;
+            
+        }
+
+        hr {
+            height: 1px;
+            color: grey;
+        }
+        
+        /*-----------------------------------Task 1: CSS code-----------------------------------*/
+        
+        h2 {
+			color: #024d72;
+            font-family: Calibri;
+            font-size: 35px; 
+            text-align: center;
+        }
+
+        h4 {
+			color: red;
+            font-family: Calibri;
+            font-size: 25px; 
+            text-align: center;
+        }
+
+        h5 {
+			color: red;
+            font-family: Calibri;
+            font-size: 20px; 
+            text-align: center;
+        }
+
+        .task1 {
+            background-color: #FFB703;
+            border: 5px solid #FB8500;
+            padding: 15px;
+            width: 50%;
+            margin: auto;
+        }
+
+        /*-----------------------------------Task 2: CSS code-----------------------------------*/
+
+        #activityTable {
+            font-family: 'Source Code Pro', monospace;
+            border-style: double;
+            border-width: 5px;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto
+        }
+        
+        #activityTable th {
+            padding: 10px;
+            border-style: solid;
+            border-color: grey;
+            border-width: 2px;
+        }
+
+        #activityTable td {
+            padding: 10px;
+            border-style: solid;
+            border-color: gray;
+            border-width: 2px;
+        }
+
+        #headerRow {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            background-color: #14213D;
+        }
+
+        .oddRow {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: #FFB703;
+        }
+
+        .evenRow {
+            font-size: 20px;
+            font-weight: bold;
+            color: #14213D;
+            background-color: #E5E5E5;
+        }
+
+        /*-----------------------------------Task 3: CSS code-----------------------------------*/
+        
+        #fruitTable {
+            font-family: Arial;
+            border-style: solid;
+            border-width: 4px;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        #fruitTable th {
+        padding: 10px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        background-color: lightgrey;
+        }
+
+        #fruitTable td {
+            padding: 10px;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+        }
+        
+        #firstRow {
+            font-size: 30px;
+            color: navy;
+        }
+
+        .oddRows {
+            font-size: 20px;
+            color: black;
+            background-color: white;
+        }
+
+        .evenRows {
+            font-size: 20px;
+            color: black;
+            background-color: white;
+        }
+
+        .fruitname {
+            width: 400px;
+            text-align: center;
+            vertical-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .oddSecondColumn {
+            background-color: aliceblue;
+        }
+
+        .evenSecondColumn {
+            background-color: antiquewhite;
+        }
+    </style>
+
+    <script>
+        //--------------------------Task 4: JavaScript code-------------------------------------
+        
+        function cat(){
+			// get the text field element
+			var displayText = document.getElementById("textfield");
+  
+			// show cat message in text field
+			displayText.value = "User clicks cat";
+            
+            // get the message element
+            var showmessage = document.getElementById("message");
+
+            // show cat message
+            showmessage.innerHTML = "Cat is clicked";
+
+            // get the image element
+			var picture = document.getElementById("pic");
+  
+            // show cat picture
+            picture.src = "cat.jpg";
+		}
+
+        function dog(){
+			// get the text field element
+			var displayText = document.getElementById("textfield");
+  
+			// show dog message in text field
+			displayText.value = "User clicks dog";
+
+            // get the message element
+            var showmessage = document.getElementById("message");
+
+            // show dog message
+            showmessage.innerHTML = "Dog is clicked";
+
+            // get the image element
+			var picture = document.getElementById("pic");
+  
+            // show dog picture
+            picture.src = "dog.jpg";
+		}
+
+		function frog(){
+			// get the text field element
+			var displayText = document.getElementById("textfield");
+  
+			// show frog message in text field
+			displayText.value = "User clicks frog";
+
+            // get the message element
+            var showmessage = document.getElementById("message");
+
+            // show frog message
+            showmessage.innerHTML = "Frog is clicked";
+
+            // get the image element
+			var picture = document.getElementById("pic");
+  
+            // show frog picture
+            picture.src = "frog.jpg";
+		}
+
+    </script>
+  </head>
+
+  <body>
+    <h1 id="studNameNum"> Stephanie Tran 7871806 Programming Assignment </h1>
+	
+	
+	<h1> Task 1 </h1>
+    <!----------------------------------- Task 1: HTML code ----------------------------------->
+
+    <div class="task1">
+        <h2> 7871806 Stephanie Tran</h2>
+        <h4>COMP802: Web Security</h4>
+        <h5>Assessment 3, due: 6 March 2023</h6>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+
+    <h1> Task 2 </h1>
+    <!------------------------------------- Task 2: HTML code ------------------------------------->
+
+    <table id="activityTable">
+        <tr id="headerRow">
+          <th> Activity </th>
+          <th> Date </th>
+        </tr>
+  
+        <tr class="oddRow">
+          <td>
+            First day to enrol for re- enrolling (continuing students)
+          </td>
+          <td >
+            21 Nov 2021
+          </td>
+        </tr>
+
+        <tr class="evenRow">
+            <td>
+              Orientation
+            </td>
+            <td >
+                During Week of 18 July 2022
+                Visit <a href="https://www.uow.edu.au/student/get-started/orientation/" target="_blank">Orientation page</a>
+                for more details
+            </td>
+        </tr>
+
+        <tr class="oddRow">
+            <td>
+                Lectures Commence (weeks 1- 9)
+            </td>
+            <td >
+                25 Jul - 23 Sep 2022
+            </td>
+        </tr>
+
+        <tr class="evenRow">
+            <td>
+                Last day to enrol/ add subjects yourself
+            </td>
+            <td >
+                06 Aug 2022
+            </td>
+        </tr>
+          
+      </table>
+    <br>
+    <br>
+    <hr>
+
+    <h1> Task 3 </h1>
+    <!------------------------------------- Task 3: HTML code ------------------------------------->
+
+    <table id="fruitTable">
+        <tr id="firstRow">
+            <th> Name </th>
+            <th> Health Benefit </th>
+        </tr>
+  
+        <tr class="oddRows">
+            <td class="fruitname">
+                Apples 
+                <br>
+                <br>
+                <img src="apples.jpg" width="300px" alt="Picture of apples" />
+            </td>
+            <td class="oddSecondColumn">
+                Contains:
+                <ul>
+                    <li>Fibre</li>
+                    <li>Phytochemicals</li>
+                    <li>Vitamin C</li>
+                </ul>
+                Fibre promotes:
+                <ul>
+                    <li>Bowel function</li>
+                </ul>
+                Vitamin C promotes:
+                <ul>
+                    <li>Your body's immune function</li>
+                </ul>
+                Source: <a href="https://www.hsph.harvard.edu/nutritionsource/food-features/apples/" target="_blank">Harvard School of Public Health: Apples</a> 
+            </td>
+        </tr>
+
+        <tr class="evenRows">
+            <td class="fruitname">
+                Bananas
+                <br>
+                <br>
+                <img src="bananas.jpg" width="300px" alt="Picture of bananas" />
+            </td>
+            <td class="evenSecondColumn">
+                Contains:
+                <ul>
+                    <li>Potassium</li>
+                </ul>
+                Potassium promotes:
+                <ul>
+                    <li>Muscle function</li>
+                    <li>Blood pressure management by helping you excrete more sodium when you urinate and relaxing blood vessel walls</li>
+                </ul>
+                Source: <a href="https://www.webmd.com/food-recipes/health-benefits-bananas" target="_blank">Webmd: Bananas</a> 
+            </td>
+        </tr>
+        
+        <tr class="oddRows">
+            <td class="fruitname">
+                Watermelons
+                <br>
+                <br>
+                <img src="watermelon.jpg" width="300px" alt="Picture of watermelons" />
+            </td>
+            <td class="oddSecondColumn">
+                Contains:
+                <ul>
+                    <li>Vitamin A, B and C</li>
+                    <li>Magnesium</li>
+                    <li>Potassium</li>
+                    <li>L-citulline</li>
+                </ul>
+                L- citulline promotes:
+                <ul>
+                    <li>Blood pressure management by improving artery function and blood vessel wall relaxation</li>
+                </ul>
+                It also keeps you hydrated! 
+                <br>
+                <br>
+                Source: <a href="https://www.health.com/nutrition/groceries/health-benefits-watermelon" target="_blank">Health.com: Watermelons</a> 
+            </td>
+        </tr>
+
+        <tr class="evenRows">
+            <td class="fruitname">
+                Blueberries
+                <br>
+                <br>
+                <img src="blueberries.jpg" width="300px" alt="Picture of blueberries" />
+            </td>
+            <td class="evenSecondColumn">
+                Contains:
+                <ul>
+                    <li>Anti- oxidants</li>
+                    <li>Vitamin C and K</li>
+                </ul>
+                Anti- oxidants:
+                <ul>
+                    <li>Protect cell health</li>
+                </ul>
+                Vitamin C promotes:
+                <ul>
+                    <li>Your body's immune function</li>
+                </ul>
+                Vitamin K promotes:
+                <ul>
+                    <li>Blood clotting function</li>
+                </ul>
+                Source: <a href="https://health.clevelandclinic.org/benefits-of-blueberries/" target="_blank">Cleveland Clinic: Blueberries</a> 
+            </td>
+        </tr>
+
+        <tr class="oddRows">
+            <td class="fruitname">
+                Pears
+                <br>
+                <br>
+                <img src="pears.jpg" width="300px" alt="Picture of pears" />
+            </td>
+            <td class="oddSecondColumn">
+                Contains:
+                <ul>
+                    <li>Fibre</li>
+                    <li>Flavanoids</li>
+                </ul>
+                Fibre promotes:
+                <ul>
+                    <li>Bowel function</li>
+                </ul>
+                Falvanoids are anti- oxidants and promotes:
+                <ul>    
+                    <li>Protect the cells of the body</li>
+                    <li>Anti- inflammatory properties</li>
+                </ul>
+                Source: <a href="https://www.healthline.com/nutrition/benefits-of-pears#TOC_TITLE_HDR_7" target="_blank">Healthline: Pears</a> 
+            </td>
+        </tr>
+
+        <tr class="evenRows">
+            <td class="fruitname">
+                Cherries
+                <br>
+                <br>
+                <img src="cherries.jpg" width="300px" alt="Picture of cherries" />
+            </td>
+            <td class="evenSecondColumn">
+                Contains:
+                <ul>
+                    <li>Anti- oxidants</li>
+                    <li>Melatonin</li>
+                </ul>
+                Anti- oxidants help:
+                <ul>
+                    <li>Protect the cells of the body</li>
+                    <li>Provide anti- inflammatory benefits</li>
+                </ul>
+                Melatonin promotes:
+                <ul>
+                    <li>Better sleep</li>
+                </ul>
+                Source: <a href="https://www.webmd.com/diet/ss/slideshow-health-benefits-cherries" target="_blank">Webmd: cherries</a> 
+            </td>
+        </tr>
+
+        <tr class="oddRows">
+            <td class="fruitname">
+                Kiwi fruit
+                <br>
+                <br>
+                <img src="kiwifruit.jpg" width="300px" alt="Picture of kiwi fruit" />
+            </td>
+            <td class="oddSecondColumn">
+                Contains:
+                <ul>
+                    <li>Fibre</li>
+                    <li>Anti- oxidants</li>
+                    <li>Vitamin C</li>
+                </ul>
+                Fibre promotes:
+                <ul>
+                    <li>Bowel function</li>
+                </ul>
+                Anti- oxidants help:
+                <ul>
+                    <li>Protect the cells of the body</li>
+                    <li>Provide anti- inflammatory benefits</li>
+                </ul>
+                Vitamin C promotes:
+                <ul>
+                    <li>Your body's immune function</li>
+                </ul>
+                Source: <a href="https://www.medicalnewstoday.com/articles/271232#benefits" target="_blank">Medical News Today: Kiwi Fruit</a> 
+            </td>
+        </tr>
+
+        <tr class="evenRows">
+            <td class="fruitname">
+                Lemon
+                <br>
+                <br>
+                <img src="lemons.jpg" width="300px" alt="Picture of lemons" />
+            </td>
+            <td class="evenSecondColumn">
+                Contains:
+                <ul>
+                    <li>Potassium</li>
+                    <li>Vitamin C</li>
+                    <li>Calcium</li>
+                    <li>Folate</li>
+                </ul>
+                Potassium helps:
+                <ul>
+                    <li>Muscle and nerve function</li>
+                </ul>
+                Vitamin C promotes:
+                <ul>
+                    <li>Your body's immune function</li>
+                </ul>
+                Calcium helps:
+                <ul>
+                    <li>Muscle function</li>
+                </ul>
+                Folate helps:
+                <ul>
+                    <li>Prevent birth defects</li>
+                    <li>Red blood cell development</li>
+                </ul>
+                Source: <a href="https://share.upmc.com/2014/08/7-health-benefits-lemon-juice/" target="_blank">University of Pittsburgh Medical Center: Lemon</a> 
+            </td>
+        </tr>
+
+        <tr class="oddRows">
+            <td class="fruitname">
+                Oranges
+                <br>
+                <br>
+                <img src="oranges.jpg" width="300px" alt="Picture of oranges" />
+            </td>
+            <td class="oddSecondColumn">
+                Contains:
+                <ul>
+                    <li>Vitamin C</li>
+                    <li>Anti- oxidants</li>
+                    <li>Folate</li>
+                </ul>
+                Vitamin C promotes:
+                <ul>
+                    <li>Your body's immune function</li>
+                </ul>
+                Anti- oxidants help:
+                <ul>
+                    <li>Protect the cells of the body</li>
+                    <li>Provide anti- inflammatory benefits</li>
+                </ul>
+                Folate helps:
+                <ul>
+                    <li>Prevent birth defects</li>
+                    <li>Red blood cell development</li>
+                </ul>
+                Source: <a href="https://www.webmd.com/food-recipes/health-benefits-oranges" target="_blank">Webmd: Oranges</a> 
+            </td>
+        </tr>
+
+        
+        <tr class="evenRows">
+            <td class="fruitname">
+                Grapes
+                <br>
+                <br>
+                <img src="grapes.jpg" width="300px" alt="Picture of grapes" />
+            </td>
+            <td class="evenSecondColumn">
+                Contains:
+                <ul>
+                    <li>Vitamin C</li>
+                    <li>Anti- oxidants</li>
+                </ul>
+                Vitamin C promotes:
+                <ul>
+                    <li>Your body's immune function</li>
+                </ul>
+                Anti- oxidants help:
+                <ul>
+                    <li>Protect the cells of the body</li>
+                    <li>Provide anti- inflammatory benefits</li>
+                </ul>
+                They are also low in sodium which helps to prevent high blood pressure
+                <br>
+                <br>
+                Source: <a href="https://health.clevelandclinic.org/health-benefits-of-grapes/" target="_blank">Cleveland Clinic: Grapes</a> 
+            </td>
+        </tr>
+      </table>
+    <br>
+    <br>
+    <hr>
+
+    <h1> Task 4 </h1>
+    <!------------------------------------- Task 4: HTML code ------------------------------------->
+
+    <button onClick="cat();">Cat</button> 
+	<button onClick="dog()">Dog</button>
+    <button onClick="frog()">Frog</button>
+	<br><br>
+	<input id="textfield">
+    <br><br>
+    <span id="message"></span>
+    <br><br>
+    <img id="pic" />
+    <br>
+    <br>
+    <hr>
+    <h1>References</h1>
+    <p>
+        Amazon. (2023). Fresh cherry imported, 100 G : Amazon.in: Grocery & gourmet foods. Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in. Retrieved February 27, 2023, from https://www.amazon.in/Fresh-Cherry-Imported-100-g/dp/B07MFZ6KN6
+        <br>
+        <br>
+        Bonvissuto, D. (2019). Health benefits of oranges. WebMD. Retrieved February 22, 2023, from https://www.webmd.com/food-recipes/health-benefits-oranges
+        <br>
+        <br>
+        Charlies Fruit Market. (2023). Pears – Budget/Ugly pears. Charlies Fruit Market – Brisbane Fruit & Vegetable Deliveries. Retrieved February 22, 2023, from https://charliesfruitmarket.com.au/product/pears-budget-pears/
+        <br>
+        <br>
+        Cheong, B. (2021). The humble orange. Chemwatch. Retrieved February 22, 2023, from https://www.chemwatch.net/blog/the-humble-orange/
+        <br>
+        <br>
+        Cleveland Clinic. (2021). 10 health benefits of grapes. Retrieved February 22, 2023, from https://health.clevelandclinic.org/health-benefits-of-grapes/
+        <br>
+        <br>
+        Cleveland Clinic. (2022). The Health Benefits of Blueberries. Retrieved February 22, 2023, from https://health.clevelandclinic.org/benefits-of-blueberries/
+        <br>
+        <br>
+        Corliss, J. (2021). Fruit of the month: Apples. Harvard Health. Retrieved February 22, 2023, from https://www.health.harvard.edu/heart-health/fruit-of-the-month-apples
+        <br>
+        <br>
+        Grandma Rosie's. (2023). Lemons Aussie grown, each *BEST at the market*. Grandma Rosies. Retrieved February 27, 2023, from https://www.grandmarosies.com/product/lemons-aussie-grown-each-best-at-the-market/
+        <br>
+        <br>
+        Grant, K. (2016). A French bulldog from Hackney has taught himself to skateboard. inews.co.uk. Retrieved February 27, 2023, from https://inews.co.uk/light-relief/offbeat/eric-skateboarding-french-bulldog-9231
+        <br>
+        <br>
+        Harvard. (2021). Fruit of the month: Bananas. Harvard Health. Retrieved February 22, 2023, from https://www.health.harvard.edu/heart-health/fruit-of-the-month-bananas
+        <br>
+        <br>
+        Health Jade. (2017). Watermelon - Nutrition facts - Calories, carbs and health benefits claim. Retrieved February 22, 2023, from https://healthjade.com/is-watermelon-good-for-you/
+        <br>
+        <br>
+        Kwong, E. (2021). Does your cat like you — Or just tolerate you? : Short wave. NPR.org. Retrieved February 27, 2023, from https://www.npr.org/2021/08/10/1026508261/does-your-cat-like-you-or-just-tolerate-you
+        <br>
+        <br>
+        Mikstas, C. (2022). The health benefits of cherries. WebMD. Retrieved February 22, 2023, from https://www.webmd.com/diet/ss/slideshow-health-benefits-cherries
+        <br>
+        <br>
+        NuFruit Online. (2023). Blueberries. Nu Fruit Online. Retrieved February 22, 2023, from https://nufruitonline.com.au/index.php?route=product/product&product_id=68
+        <br>
+        <br>
+        Produce. (2022). Red grape. Produce A La Carte | Fresh Vegetable & Fruit Supplier. Retrieved February 27, 2023, from https://www.producealacarte.com.au/product/red-grape/
+        <br>
+        <br>
+        Raymond, J. (2017). The health benefits of bananas. WebMD. Retrieved February 22, 2023, from https://www.webmd.com/food-recipes/health-benefits-bananas
+        <br>
+        <br>
+        Sass, C. (2020). 8 reasons watermelon is so good for you. Health. Retrieved February 22, 2023, from https://www.health.com/nutrition/groceries/health-benefits-watermelon
+        <br>
+        <br>
+        Super Mario Wiki. (2023). Frog. Retrieved February 27, 2023, from https://www.mariowiki.com/Frog
+        <br>
+        <br>
+        University of Pittsburgh Medical Center. (2022). 7 health benefits of lemon juice. UPMC HealthBeat. Retrieved February 22, 2023, from https://share.upmc.com/2014/08/7-health-benefits-lemon-juice/
+        <br>
+        <br>
+        Ware, M. (2019). Kiwifruit: Health benefits and nutritional information. Medical and health information. Retrieved February 22, 2023, from https://www.medicalnewstoday.com/articles/271232#benefits
+        <br>
+        <br>
+        Wartenberg, L. (2019). 9 health and nutrition benefits of pears. Healthline. Retrieved February 22, 2023, from https://www.healthline.com/nutrition/benefits-of-pears
+        <br>
+        <br>
+        Zone Fresh's Finest. (2023). Kiwi fruit. Zone Fresh. Retrieved February 27, 2023, from https://zonefresh.com.au/product/kiwi-fruit-each-fruit-fresh-zonefresh/
+    </p>
+  </body>
+
+</html>
